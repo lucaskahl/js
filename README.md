@@ -52,6 +52,10 @@ https://www.udemy.com/js-com-tdd-na-pratica
  - Adicionando Sourcemaps em nosso código
  - Inicializando um server com Webpack
 
+### Cool links
+
+`https://github.com/pedroapfilho/high-order-functions`
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
