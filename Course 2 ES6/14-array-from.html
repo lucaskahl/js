@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>14 - Array From</title>
+<body>
+</body>
+
+<ul id="list">
+  <li>Lucas</li>
+  <li>Diego</li>
+  <li>Gabriel</li>
+</ul>
+<script>
+  const list = document.querySelectorAll('#list li');
+
+  const listArray = Array.from(list)
+  console.log(list);
+
+  const names = listArray.map((name) => name.textContent);
+
+  console.log(names);
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>25 - Promises Intro</title>
+</head>
+<body>
+<script>
+
+    var defer = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if(true){
+          resolve('Hello it works!');
+        }else{
+          reject('Error');
+        }
+      }, 3000);
+    });
+
+    defer.then((data) => {
+      console.log(data);
+      return 'foo';
+    })
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err));
+
+
+</script>
+</body>
+</html>

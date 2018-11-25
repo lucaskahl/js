@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>07 - Arrow Function ex</title>
+</head>
+<body>
+
+    <button id="btn">Make my sandwich!</button>
+</body>
+
+<script>
+    const sandwich = {
+        bread: 'white',
+        cheese: 'cheddar',
+        prepare: function() {
+            return `I want a sandwich with ${this.bread} bread and ${this.cheese} cheese!`;
+        },
+        make: function() {
+            window.setTimeout(() => {
+                console.log( this.prepare() );
+            }, 500);
+        }
+    };
+
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function() { sandwich.make() }); // pode ser que não seja a melhor opção o arrow function pois as vezes queremos trabalhar com o eventlistener do btn;
+</script>
+</html>

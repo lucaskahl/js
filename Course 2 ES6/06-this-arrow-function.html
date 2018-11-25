@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>06 - This Arrow Function</title>
+</head>
+<body>
+
+    <button id="btn">Click Me!</button>
+</body>
+
+<script>
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function() {
+        console.log(this);
+    });
+</script>
+</html>

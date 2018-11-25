@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>18 - Destructuring Objects</title>
+</head>
+<body>
+
+
+<script>
+
+    var data = {
+        name: 'Lucas',
+        surname: 'Kahl',
+        age: 19,
+        blog: 'https://google.com',
+        social: {
+            twitter: '@lucaskahl',
+            facebook: '/lucaschangkahl'
+        }
+    };
+
+    // const nome = data.name;  método sem destructuring
+    // const surname = data.surname;  método sem destructuring
+    // const facebook = data.social.facebook;  método sem destructuring
+
+    const { name, surname } = data;
+        console.log(name);
+        console.log(surname);
+
+    const { facebook, twitter } = data.social;
+        console.log(facebook);
+        console.log(twitter);
+
+    const { facebook: fb } = data.social;
+        console.log(fb);
+
+    const { city = 'São Paulo' } = data;
+        console.log(city);
+
+
+
+
+</script>
+
+</body>
+</html>

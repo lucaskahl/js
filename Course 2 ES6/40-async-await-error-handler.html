@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Async/Await Intro</title>
+    <p class="posts">a</p>
+</head>
+<body>
+    <script>
+        async function getPosts() {
+            try{
+            const response = await fetch('https://willianjusten.com.br/search.json');
+            const data = await response.json();
+ 
+            return data.map( post => {
+                console.log(post.title);
+                let posts = document.querySelector('.posts');
+                posts.innerHTML = post.title;
+            });
+            }catch(err){
+                console.error('Something is wrong... ',err);
+            }
+        }
+ 
+        getPosts();
+
+    </script>
+</body>
+</html>

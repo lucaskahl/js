@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>05 - Arrow Function</title>
+</head>
+<body>
+</body>
+
+<script>
+    const patch = ['G001', 'G002', 'G003'];
+    const love = patch.map(function(name) {
+        return `I love ${name}!`;
+    });
+    const loveArrow = patch.map((name) => {
+        return `I love ${name}!`;
+    });
+    const loveArrowSingle = patch.map(name => {
+        return `I love ${name}!`;
+    });
+    const loveArrowOneLine = patch.map(name => `I love ${name}!`);
+    const loveChain = patch
+                        .filter(name => name === 'G001')
+                        .map(name => `I love ${name}!`);
+    console.log(loveChain);
+</script>
+</html>

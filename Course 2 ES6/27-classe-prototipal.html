@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>27 - Revisão Herança Prototipal</title>
+</head>
+<body>
+  <script>
+
+    function Animal(kind, sound) {
+      this.kind = kind;
+      this.sound = sound;
+    }
+
+    Animal.prototype.hello = function() {
+      console.log(`${this.sound} I'm a ${this.kind}!!`);
+    }
+
+    const dog = new Animal('dog', 'auau');
+    const cat = new Anaimal('cat', 'meow');
+
+  </script>
+</body>
+</html>

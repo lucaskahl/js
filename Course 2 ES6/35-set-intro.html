@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>35 - Set Introduction</title>
+</head>
+<body>
+<script>
+
+  let mySet = new Set(['Lucas', 'Kahl', 'Supimpa']);
+
+  mySet.add('Jonas');
+  mySet.add('Jonas');
+  mySet.add('Jonas');
+  mySet.add('Jonas');
+  mySet.add('Jonas');
+
+  mySet.delete('Lucas');
+
+  console.log(mySet.has('Kahl'));
+  console.log(mySet.has('Lucas'));
+
+  console.log(mySet[1]);
+
+  let it = mySet.values();
+
+  console.log(it.next());
+
+  for (name of it) {
+    console.log(name);
+  }
+
+
+</script>
+</body>
+</html>

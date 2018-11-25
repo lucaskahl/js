@@ -1,0 +1,3 @@
+[submodule "src/src/high-order-functions"]
+	path = src/src/high-order-functions
+	url = https://github.com/pedroapfilho/high-order-functions

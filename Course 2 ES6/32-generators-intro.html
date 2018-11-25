@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>32 - Generators Intro</title>
+</head>
+<body>
+<script>
+  function* getNames() {
+    console.log('Chamando o primeiro nome');
+    yield 'Lucas';
+
+    console.log('Chamando segundo nome');
+    yield 'Pedro';
+
+    console.log('Chamando terceiro nome');
+    yield 'Jonathan';
+  }
+  const names = genNames();
+
+  console.log(names.next());
+  console.log(names.next());
+  console.log(names.next());
+
+</script>
+</body>
+</html>

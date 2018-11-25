@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>10 - temporal dead zone</title>
+
+    <style>
+    .green {
+        color: green;
+        font-size: 25px;
+    }
+</style>
+<body>
+</body>
+
+<script>
+
+
+  const city = 'Dublin';
+  const something = 'Guiness';
+  const otherThing = "Leprechounds";
+
+  function green(template, ...values){
+    return template.reduce((accumulator, part, i) => {
+      return `
+        ${accumulator}
+        <span class="green">${values[i - 1].toUpperCase()}</span>
+        ${part}
+        `
+    });
+  }
+
+  const ireland = green`I live in ${city} and i have ${something} in my ${otherThing}`;
+  document.body.innerHTML =  ireland;
+
+
+</script>
+</html>

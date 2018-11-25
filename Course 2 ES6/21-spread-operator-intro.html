@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>22 - Spread Operator Intro</title>
+</head>
+<body>
+    <script>
+
+        let front = ['react', 'vue', 'angular'];
+        let back = ['python', 'java', 'nodejs'];
+
+        let fullStack = [...front, 'PHP', ...back];
+
+        console.log(fullStack);
+
+
+            /* Forma com es5 sem o spread operator para incluir em arrays    */
+        // let fullStack = [];
+        // fullStack = fullStack.concat(front);
+        // fullStack.push('RxJS');
+        // fullStack = fullStack.concat(back);
+    </script>
+
+</body>
+</html>

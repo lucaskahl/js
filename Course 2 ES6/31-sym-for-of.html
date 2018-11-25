@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>31 - For...of</title>
+</head>
+<body>
+<script>
+  /*
+    iterators
+    iterable
+  */
+
+  var txt = 'São Paulo'; // iterable
+  var it = txt[Symbol.iterator](); // iterator
+
+  // console.log( it.next() );
+  // console.log( it.next() );
+  // console.log( it.next() );
+  // console.log( it.next() );
+  // console.log( it.next() );
+
+  for (letter of txt) {
+    console.log(letter);
+    if( letter === 'a' ) break
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>03 - const</title>
+</head>
+<body>
+</body>
+
+  <script>
+
+    const secretNumber = 10;
+    secretNumber = 11; // dará erro pos const o valor não muda
+
+    const lu = {
+      name: lucas,
+      age: 19
+    }
+
+    Object.freeze(lu); // não deixa mexer no objeto
+
+    lu.age = 25; // única forma de alterar o const ( objeto ), porém com o freeze ele fica imutavel ( não muda );
+
+    console.log(lu);
+
+
+  </script>
+</html>
